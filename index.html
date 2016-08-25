@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -36,12 +35,20 @@
   </head>
   <body>
     <div class="header">
-      <img src="./logo.svg"/>
-      <div class="nav">
-        <a href="#">About</a>
-        <a href="#">Rush</a>
-        <a href="#">Alumni</a>
-        <a href="#">Donate</a>
+      <div class="fixo">
+        <div class="logo">
+          <img src="./shield.svg"/>
+          <div class="logo-text">
+            <div class="logo-text-top">Alpha Epsilon Pi</div>
+            <div class="logo-text-bottom">Alpha Kappa</div>
+          </div>
+        </div>
+        <div class="nav">
+          <a href="#">About</a>
+          <a href="#">Rush</a>
+          <a href="#">Alumni</a>
+          <a href="#">Donate</a>
+        </div>
       </div>
     </div>
     <div class="main">
@@ -55,22 +62,82 @@
       <div class="section">
         <div class="section-title">Our Values</div>
         <div class="section-content">
-          First and foremost, our chapter is a group of friends; we live together, eat together, work together, and hang out together. We are men who seek to enhance our college experience — complementing our academic pursuits by providing a fun and supportive environment that allows us to thoroughly enjoy everything that Carnegie Mellon and the City of Pittsburgh have to offer. 
-          Whether it’s going to the gym, playing sports, going to see a movie, doing homework together, or even just lending a helping hand to one another, we are always there for each other. We are friends, and we are brothers.
+          Our values are the foundation of our organization. We refer to these values as the “Five Pillars”, and they are at the heart of everything we do: <strong>faith</strong>, <strong>honestry</strong>, <strong>humility</strong>, <strong>perserverence</strong>, and <strong>mutual helpfulness</strong>.
+          <div class="section-pillars">
+            <img src="./pillars.svg"/>
+          </div>
+          Learn more about our values on our National website, <a href="#">aepi.org</a>.
         </div>
       </div>
       <div class="section">
         <div class="section-title">Our Leadership</div>
         <div class="section-content">
-          First and foremost, our chapter is a group of friends; we live together, eat together, work together, and hang out together. We are men who seek to enhance our college experience — complementing our academic pursuits by providing a fun and supportive environment that allows us to thoroughly enjoy everything that Carnegie Mellon and the City of Pittsburgh have to offer. 
-          Whether it’s going to the gym, playing sports, going to see a movie, doing homework together, or even just lending a helping hand to one another, we are always there for each other. We are friends, and we are brothers.
+          Alpha Epsilon Pi’s goal is to develop leaders for the global Jewish community.  The AEPi Staff and Volunteers work tirelessly to create as many educational opportunities as possible for undergraduate Brothers.  (replace this text)
+        </div>
+        <div class="section-profiles">
+          <div class="section-profile">
+            <div class="section-profile-name">Isaac</div>
+            <img class="section-profile-avatar" src="./master.png"/>
+            <div class="section-profile-title">Master</div>
+          </div>
+          <div class="section-profile">
+            <div class="section-profile-name">Jared</div>
+            <img class="section-profile-avatar" src="./lt-master.png"/>
+            <div class="section-profile-title">Lt. Master</div>
+          </div>
+          <div class="section-profile">
+            <div class="section-profile-name">Avi</div>
+            <img class="section-profile-avatar" src="./scribe.png"/>
+            <div class="section-profile-title">Scribe</div>
+          </div>
+          <div class="section-profile">
+            <div class="section-profile-name">Jordan</div>
+            <img class="section-profile-avatar" src="./exchequer.png"/>
+            <div class="section-profile-title">Exchequer</div>
+          </div>
+          <div class="section-profile">
+            <div class="section-profile-name">Ben</div>
+            <img class="section-profile-avatar" src="./member-at-large.png"/>
+            <div class="section-profile-title">Member-at-Large</div>
+          </div>
         </div>
       </div>
     </div>
     <div class="footer">
-      <div class="footer-lyric">“…born beneath old NYU, now we roll at CMU…”</div>
-      <div class="footer-credit">Designed by Avi</div>
+      <div class="footer-bottom">
+        <div class="footer-lyric">“…born beneath old NYU, now we roll at CMU…”</div>
+        <!-- <div class="footer-credit">Designed by Avi</div> -->
+      </div>
     </div>
     <script src="http://localhost:35729/livereload.js"></script>
+    <script>
+
+    function debounce(func, wait, immediate) {
+    	var timeout;
+    	return function() {
+    		var context = this, args = arguments;
+    		var later = function() {
+    			timeout = null;
+    			if (!immediate) func.apply(context, args);
+    		};
+    		var callNow = immediate && !timeout;
+    		clearTimeout(timeout);
+    		timeout = setTimeout(later, wait);
+    		if (callNow) func.apply(context, args);
+    	};
+    };
+
+    const handler = e => {
+      console.log(document.body.scrollTop)
+      if (document.body.scrollTop > 310) {
+        document.querySelector('.fixo').classList.add('fixed')
+      } else {
+        document.querySelector('.fixo').classList.remove('fixed')
+
+      }
+    }
+
+    window.addEventListener('scroll', debounce(handler, 0, true))
+    </script>
   </body>
 </html>

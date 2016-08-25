@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="326px" height="178px" viewBox="0 0 326 178" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>pillars</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="aepi.rocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy-33" transform="translate(-43.000000, -1331.000000)" fill="#EFEFEF">
+            <g id="pillars" transform="translate(43.000000, 1330.000000)">
+                <text id="Mutual-Helpfulness" font-family="MatrixIIOT-Bold, Matrix II OT" font-size="26" font-weight="bold" line-spacing="26" letter-spacing="1.11428571">
+                    <tspan x="73" y="175">Mutual Helpfulness</tspan>
+                </text>
+                <text id="Honesty" font-family="MatrixIIOT-Bold, Matrix II OT" font-size="26" font-weight="bold" line-spacing="26" letter-spacing="1.11428571">
+                    <tspan x="73" y="62">Honesty</tspan>
+                </text>
+                <text id="Perseverance" font-family="MatrixIIOT-Bold, Matrix II OT" font-size="26" font-weight="bold" line-spacing="26" letter-spacing="1.11428571">
+                    <tspan x="73" y="137">Perseverance</tspan>
+                </text>
+                <text id="Faith" font-family="MatrixIIOT-Bold, Matrix II OT" font-size="26" font-weight="bold" line-spacing="26" letter-spacing="1.11428571">
+                    <tspan x="73" y="25">Faith</tspan>
+                </text>
+                <text id="Humility" font-family="MatrixIIOT-Bold, Matrix II OT" font-size="26" font-weight="bold" line-spacing="26" letter-spacing="1.11428571">
+                    <tspan x="73" y="100">Humility</tspan>
+                </text>
+                <g id="column-copy" transform="translate(0.000000, 1.000000)">
+                    <rect id="Rectangle-path" x="10.5" y="28.8333333" width="30" height="115.333333"></rect>
+                    <rect id="Rectangle-path" x="7.5" y="148.011111" width="36" height="7.68888889"></rect>
+                    <rect id="Rectangle-path" x="0" y="159.544444" width="51" height="13.4555556"></rect>
+                    <rect id="Rectangle-path" x="7.5" y="17.3" width="36" height="7.68888889"></rect>
+                    <rect id="Rectangle-path" x="0" y="0" width="51" height="13.4555556"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
