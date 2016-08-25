@@ -39,7 +39,7 @@
         <div class="logo">
           <img src="./shield.svg"/>
           <div class="logo-text">
-            <div class="logo-text-top">Alpha Epsilon Pi</div>
+            <div class="logo-text-top"><!-- responsive text set via CSS --></div>
             <div class="logo-text-bottom">Alpha Kappa</div>
           </div>
         </div>
@@ -128,7 +128,6 @@
     };
 
     const handler = e => {
-      console.log(document.body.scrollTop)
       if (document.body.scrollTop > 310) {
         document.querySelector('.fixo').classList.add('fixed')
       } else {

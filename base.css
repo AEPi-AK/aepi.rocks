@@ -58,15 +58,18 @@ a {
   transition: transform 500ms;
 }
 
-.fixo .logo-text-bottom {
+.logo-text-bottom {
   transition: all 500ms;
+}
+
+.logo-text-top::after {
+  content: 'Alpha Epislon Pi';
 }
 
 .fixo.fixed {
   padding-top: 10px;
   padding-bottom: 0px;
   background-image: url('./hero.png');
-  background-color: red;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -112,7 +115,7 @@ a {
 
 .section-pillars {
   margin-top: 30px;
-  margin-bottom: -10px;
+  margin-bottom: 15px;
 }
 
 .section-title {
@@ -183,22 +186,43 @@ a {
 
 
 @media (max-width: 850px) {
+
+  .header {
+    height: 40vh;
+    background-position-y: -100px;
+  }
+
   .fixo {
     flex-direction: column;
     align-items: center;
   }
 
   .logo {
-    margin-top: 25px;
+    /*margin-top: 25px;*/
+  }
+
+  .logo-text-top::after {
+    content: 'AEPi at CMU';
+  }
+
+  .logo-text-bottom {
+    display: none;
   }
 
   .nav {
+    display: none;
+  }
+
+  /*.nav {
     margin-top: 0px;
     margin-bottom: 10px;
     margin-left: unset;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
   }
 
   .nav a {
     margin-left: 15px;
-  }
+  }*/
 }
