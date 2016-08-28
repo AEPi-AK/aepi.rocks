@@ -200,13 +200,13 @@ a {
 @media (max-width: 850px) {
 
   .header {
-    height: 26vh;
+    height: unset;
     background-image: none;
     background-attachment: scroll;
   }
 
   .nav a {
-    font-size: 16px;
+    font-size: 20px;
     margin-left: 6px;
     margin-right: 6px;
   }
@@ -219,7 +219,6 @@ a {
 
   .logo {
     margin-bottom: -20px;
-    /*margin-left: -20px;*/
   }
 
   .logo-text {
@@ -241,8 +240,12 @@ a {
 
   .nav {
     display: flex;
-    justify-content: center;
     width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: -20px;
   }
 
 }
