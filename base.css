@@ -105,7 +105,8 @@ a {
 
 .nav a {
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .nav a:hover {
@@ -184,6 +185,7 @@ a {
   padding-bottom: 15px;
   opacity: 0.75;
   font-size: 20px;
+  text-align: center;
 }
 
 .footer-lyric {
@@ -198,10 +200,15 @@ a {
 @media (max-width: 850px) {
 
   .header {
-    height: 40vh;
-    /*background-position-y: -100px;*/
+    height: 26vh;
+    background-image: none;
     background-attachment: scroll;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('./hero.png');
+  }
+
+  .nav a {
+    font-size: 16px;
+    margin-left: 6px;
+    margin-right: 6px;
   }
 
   .fixo {
@@ -211,11 +218,13 @@ a {
   }
 
   .logo {
-    /*margin-top: 25px;*/
-    /*display: none;*/
-    /*display: none;*/
     margin-bottom: -20px;
-    margin-left: -20px;
+    /*margin-left: -20px;*/
+  }
+
+  .logo-text {
+    font-size: 30px;
+    margin-left: 20px;
   }
 
   .logo-text-bottom {
@@ -223,7 +232,7 @@ a {
   }
 
   .logo > img {
-    display: none;
+    height: 75px;
   }
 
   .logo-text-top::after {
@@ -231,8 +240,6 @@ a {
   }
 
   .nav {
-    /*display: none;*/
-    /*text-align: center;*/
     display: flex;
     justify-content: center;
     width: 100%;
