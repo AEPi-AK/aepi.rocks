@@ -128,11 +128,11 @@
     	};
     };
 
-    const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
-    const isMobile = window.matchMedia("(max-width: 800px)").matches
     const handler = e => {
+      const isMobile = window.matchMedia("(max-width: 800px)").matches
+      if (isMobile) return false
       console.log(document.body.scrollTop)
-      if (document.body.scrollTop > (isMobile ? 184 : 330)) {
+      if (document.body.scrollTop > 330) {
         document.querySelector('.fixo').classList.add('fixed')
       } else {
         document.querySelector('.fixo').classList.remove('fixed')
