@@ -24,6 +24,10 @@ a {
   align-items: center;
 }
 
+.logo > img {
+  height: 100px;
+}
+
 .logo-text {
   margin-left: 30px;
   flex-direction: column;
@@ -55,7 +59,7 @@ a {
 }
 
 .fixo .logo img {
-  transition: transform 500ms;
+  transition: all 500ms;
 }
 
 .logo-text-bottom {
@@ -63,21 +67,27 @@ a {
 }
 
 .logo-text-top::after {
-  content: 'Alpha Epislon Pi';
+  content: 'Alpha Epsilon Pi';
 }
 
 .fixo.fixed {
-  padding-top: 10px;
+  height: 90px;
+  margin-top: -10px;
   padding-bottom: 0px;
-  background-image: url('./hero.png');
+  /* background-image: url('./hero.png'); */
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  /*box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.75);*/
+  /* background-attachment: fixed; */
+  box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.55);
+  background-color: #2b465d;
+  padding-top: 0;
+  margin-bottom: -10px;
 }
 
 .fixo.fixed .logo img {
-  transform: scale(0.8);
+  transform: scale(0.5);
+  opacity: 0;
+  margin-left: -55px;
 }
 
 .fixo.fixed .logo-text-bottom {
@@ -199,11 +209,17 @@ a {
 
   .logo {
     /*margin-top: 25px;*/
+    /*display: none;*/
   }
 
   .logo-text-top::after {
     content: 'AEPi at CMU';
   }
+
+  .fixo.fixed .logo img {
+    margin-left: -110px;
+  }
+
 
   .logo-text-bottom {
     display: none;
@@ -211,18 +227,10 @@ a {
 
   .nav {
     display: none;
+    /*text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;*/
   }
 
-  /*.nav {
-    margin-top: 0px;
-    margin-bottom: 10px;
-    margin-left: unset;
-    font-size: 18px;
-    position: absolute;
-    top: 10px;
-  }
-
-  .nav a {
-    margin-left: 15px;
-  }*/
 }

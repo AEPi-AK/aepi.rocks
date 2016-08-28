@@ -37,7 +37,7 @@
     <div class="header">
       <div class="fixo">
         <div class="logo">
-          <img src="./shield.svg"/>
+          <img src="./shield.png"/>
           <div class="logo-text">
             <div class="logo-text-top"><!-- responsive text set via CSS --></div>
             <div class="logo-text-bottom">Alpha Kappa</div>
@@ -55,8 +55,9 @@
       <div class="section">
         <div class="section-title">Who Are We?</div>
         <div class="section-content">
-          First and foremost, our chapter is a group of friends; we live together, eat together, work together, and hang out together. We are men who seek to enhance our college experience — complementing our academic pursuits by providing a fun and supportive environment that allows us to thoroughly enjoy everything that Carnegie Mellon and the City of Pittsburgh have to offer. 
-          Whether it’s going to the gym, playing sports, going to see a movie, doing homework together, or even just lending a helping hand to one another, we are always there for each other. We are friends, and we are brothers.
+          Welcome to the site of the Alpha Kappa chapter of Alpha Epsilon Pi.  Founded in the waning days of Communism and Hair Metal, we have served as a home for Jewish students at Carnegie Mellon for almost thirty years.
+          <br/><br/>Walk through our doors on the corner of Forbes and Morewood and immediately feel part of something.
+          <br/>Whether you seek camaraderie, escape from your school work, or just a great time, the community fostered by the brothers of AEPi is the place for you.
         </div>
       </div>
       <div class="section">
@@ -127,8 +128,11 @@
     	};
     };
 
+    const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+    const isMobile = window.matchMedia("(max-width: 800px)").matches
     const handler = e => {
-      if (document.body.scrollTop > 310) {
+      console.log(document.body.scrollTop)
+      if (document.body.scrollTop > (isMobile ? 184 : 330)) {
         document.querySelector('.fixo').classList.add('fixed')
       } else {
         document.querySelector('.fixo').classList.remove('fixed')
