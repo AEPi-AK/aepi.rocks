@@ -174,8 +174,7 @@
     const handler = e => {
       const isMobile = window.matchMedia("(max-width: 800px)").matches
       if (isMobile) return false
-      console.log(document.body.scrollTop)
-      if (document.body.scrollTop > 330) {
+      if (window.scrollY > 330) {
         document.querySelector('.fixo').classList.add('fixed')
       } else {
         document.querySelector('.fixo').classList.remove('fixed')
