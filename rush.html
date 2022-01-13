@@ -42,90 +42,47 @@
 </head>
 
 <body>
-  <div class="header">
-    <div class="fixo">
-      <div class="logo">
-        <img src="./shield.png" />
-        <div class="logo-text">
-          <div class="logo-text-top">
-            <!-- responsive text set via CSS -->
-          </div>
-          <div class="logo-text-bottom">Alpha Kappa</div>
+    <div class="header-no-img">
+        <div class="fixo">
+            <div class="logo">
+                <img src="./shield.png" />
+                <div class="logo-text">
+                <div class="logo-text-top">
+                    <!-- responsive text set via CSS -->
+                </div>
+                <div class="logo-text-bottom">Alpha Kappa</div>
+                </div>
+            </div>
+            <div class="nav">
+                <a href="index.html">About</a>
+                <a href="rush.html">Rush</a>
+            <!-- <a href="./rush_f19.pdf" target="_blank">Rush</a>-->
+                <a href="https://www.facebook.com/groups/6981536882/" target="_blank">Alumni</a>
+                <a href="https://www.paypal.com/biz/fund?id=89RNDM4H7HSKY" target="_blank">Donate</a>
+                <a href="mailto:master.aepi.ak@gmail.com">Contact</a>
+            </div>
         </div>
-      </div>
-      <div class="nav">
-        <a href="index.html">About</a>
-        <a href="rush.html">Rush</a>
-       <!-- <a href="./rush_f19.pdf" target="_blank">Rush</a>-->
-        <a href="https://www.facebook.com/groups/6981536882/" target="_blank">Alumni</a>
-        <a href="https://www.paypal.com/biz/fund?id=89RNDM4H7HSKY" target="_blank">Donate</a>
-        <a href="mailto:master.aepi.ak@gmail.com">Contact</a>
-      </div>
     </div>
-  </div>
   <div class="main">
     <div class="section">
-      <article id="about">
-      <div class="section-title">Who Are We?</div>
-      <div class="section-content">
-        Welcome to the site of the Alpha Kappa chapter of Alpha Epsilon Pi. Founded in the waning days of Communism and
-        Hair Metal, we have served as a home for Jewish students at Carnegie Mellon for almost thirty years.
-        <br /><br />Walk through our doors on the corner of Forbes and Morewood and immediately feel part of something.
-        <br />Whether you seek camaraderie, escape from your school work, or just a great time, the community fostered
-        by the brothers of AEPi is the place for you.
-      </div>
-      </article>
-    </div>
-    <div class="section">
-      <div class="section-title">Our Values</div>
-      <div class="section-content">
-        Our values are the foundation of our organization. We refer to these values as the “Five Pillars”, and they are
-        at the heart of everything we do: <strong>faith</strong>, <strong>honesty</strong>, <strong>humility</strong>,
-        <strong>perserverence</strong>, and <strong>mutual helpfulness</strong>.
-        <div class="section-pillars">
-          <img src="./pillars.svg" />
-        </div>
-        Learn more about our values on our National website, <a href="http://aepi.org">aepi.org</a>.
-      </div>
-    </div>
-    <div class="section">
-      <div class="section-title">Our Leadership</div>
-      <div class="section-content">
-        Alpha Epsilon Pi’s goal is to develop leaders for the global Jewish community. The Executive Board works to
-        support their undergraduate Brothers socially, academically, and religiously.
-      </div>
-      <div class="section-profiles">
-      <div class="section-profile">
-          <div class="section-profile-name">Jonny</div>
-          <img class="section-profile-avatar" src="./img/eboard/scribe.jpg" />
-          <div class="section-profile-title">Secretary</div>
-        </div>
-        <div class="section-profile">
-          <div class="section-profile-name">Jared</div>
-          <img class="section-profile-avatar" src="./img/eboard/lt-master.jpg" />
-          <div class="section-profile-title">Vice President</div>
-        </div>
-        
-        <div class="section-profile">
-          <div class="section-profile-name">Zach</div>
-          <img class="section-profile-avatar" src="./img/eboard/master.jpg" />
-          <div class="section-profile-title">President</div>
-        </div>
-        <div class="section-profile">
-          <div class="section-profile-name">Skyler</div>
-          <img class="section-profile-avatar" src="./img/eboard/exchequer.jpg" />
-          <div class="section-profile-title">Treasurer</div>
-        </div>
-        <div class="section-profile">
-          <div class="section-profile-name">Max</div>
-          <img class="section-profile-avatar" src="./img/eboard/member-at-large.jpg" />
-          <div class="section-profile-title">Brother-at-Large</div>
-        </div>
-      </div>
-    </div>
-    <div class="section">
     <article id="rush">
-    </article>
+      <div class="section-title">Rush</div>
+      <div class="section-content">
+        <div class="row">
+          <div class="column">
+            <strong>Interested in joining AEPi?</strong><br><br>
+            Please fill out <a href="https://forms.gle/2cBNaJQ6ACnSuGaf9">this form</a>. Be sure to read our mission statement and the rest of the website to find out what we stand for as a fraternity and what we do.
+
+        <!--<br><br>Rush Schedule: (insert pdf link? You can update this portion later when its ready, for now "TBD") 
+        <br><br>Be sure to check out our rush schedule to be up to date on AEPi recruitment at CMU!
+        <br>-->
+          </div>
+          <div class="column">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7G8V2Oy4SsWFYfPPakoKoUj3qhawhnEmCvnfUJTkDBxxEjg/viewform?embedded=true" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div>
+        </div>
+      </div>
+          </article>
 
     </div>
   </div>
@@ -158,7 +115,7 @@
     const handler = e => {
       const isMobile = window.matchMedia("(max-width: 800px)").matches
       if (isMobile) return false
-      if (window.scrollY > 330) {
+      if (window.scrollY >= 0) {
         document.querySelector('.fixo').classList.add('fixed')
       } else {
         document.querySelector('.fixo').classList.remove('fixed')

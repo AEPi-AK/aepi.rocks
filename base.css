@@ -58,6 +58,16 @@ a {
   text-shadow: 0 2px 4px rgba(0,0,0,0.7);
 }
 
+.header-no-img {
+  font-size: 24px;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) ), url('./img/banner.jpeg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 20vh;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
 .fixo {
   position: fixed;
   display: flex;
